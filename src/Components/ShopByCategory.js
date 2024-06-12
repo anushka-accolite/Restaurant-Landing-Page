@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./ShopByCategory.css";
+import { FiArrowRight } from "react-icons/fi";
+
 
 const ShopByCategory = () => {
   const [categories, setCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState("");
   const [recipes, setRecipes] = useState([]);
+
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -40,9 +43,11 @@ const ShopByCategory = () => {
     }
   }, [activeCategory]);
 
+
   return (
     <div className="shop-by-category">
-      <h2 className="category-title">Shop by Category</h2>
+      <h2 className="category-title-main">Shop by Category</h2>
+      <h1 className="category-title">Top Category of Organic Food</h1>
       <div className="category-buttons">
         {categories.map((category) => (
           <button
@@ -64,96 +69,20 @@ const ShopByCategory = () => {
             {/* <p>lowsdbajshbdashbdjshbdjhsb</p> */}
             <p>loremipsumdolorsitametloremipsum</p>
             </div>
-            <div className="pricing"><span>$1</span><span>Shop now</span></div>
+            <div className="pricing"><span>$8.45</span> 
+            <div className="price-line-container">
+                <div className="price-line">
+            <span>Shop now <FiArrowRight /></span>
+            </div>
+            </div>
+            </div>
           </div>
         ))}
       </div>
+     
     </div>
   );
 };
 
 export default ShopByCategory;
-
-// import React, { useState, useEffect } from "react";
-// import axios from "axios";
-// import "./ShopByCategory.css";
-
-// const ShopByCategory = () => {
-//   const categories = [
-//     "fruits and vegetables",
-//     "bakery",
-//     "meat and seafood",
-//     "beverage",
-//     "biscuit and snacks"
-//   ];
-
-//   const [activeCategory, setActiveCategory] = useState("");
-//   const [recipes, setRecipes] = useState([]);
-
-//   // Mock data for each category
-//   const mockData = {
-//     "fruits and vegetables": [
-//       {
-//         idMeal: "1",
-//         strMeal: "Apple Salad",
-//         strMealThumb: "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
-//       },
-//       {
-//         idMeal: "2",
-//         strMeal: "Tomato Soup",
-//         strMealThumb: "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
-//       }
-//     ],
-//     "bakery": [
-//       {
-//         idMeal: "3",
-//         strMeal: "Chocolate Cake",
-//         strMealThumb: "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
-//       }
-//     ],
-//     "meat and seafood": [],
-//     "beverage": [],
-//     "biscuit and snacks": []
-//   };
-
-//   useEffect(() => {
-//     // Fetch recipes based on active category
-//     const fetchRecipes = async () => {
-//       if (activeCategory && mockData[activeCategory]) {
-//         setRecipes(mockData[activeCategory]);
-//       } else {
-//         setRecipes([]);
-//       }
-//     };
-
-//     fetchRecipes();
-//   }, [activeCategory]);
-
-//   return (
-//     <div className="shop-by-category">
-//       <h2 className="category-title">Shop by Category</h2>
-//       <div className="category-buttons">
-//         {categories.map((category) => (
-//           <button
-//             key={category}
-//             className={activeCategory === category ? "active" : ""}
-//             onClick={() => setActiveCategory(category)}
-//           >
-//             {category}
-//           </button>
-//         ))}
-//       </div>
-//       <div className="recipe-list">
-//         {recipes.map((recipe) => (
-//           <div key={recipe.idMeal} className="recipe-item">
-//             <img src={recipe.strMealThumb} alt={recipe.strMeal} />
-//             <h3>{recipe.strMeal}</h3>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ShopByCategory;
 

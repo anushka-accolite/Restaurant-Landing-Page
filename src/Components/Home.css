@@ -1,0 +1,101 @@
+.secondary-button {
+    /* Your existing button styles */
+    margin-right: 1em; /* Add margin to separate the button and the text */
+  }
+  
+  .secondary-button + span {
+    /* Style for the text following the button */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: palegoldenrod;
+    margin-left: 0px;
+    min-height: 100vh; /* Set minimum height for full viewport */
+     /* Optional background color */
+  }
+  .home-banner-container{
+    background-color: palegoldenrod;
+    transform: translateX(-6em);
+  }
+  .home-text-section{
+    margin-left: 3em;
+  }
+  .shop-now-container {
+    margin-bottom: 20px; /* Adjust margin for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .horizontal-line {
+  border-bottom: 50px solid #000; /* Change color and thickness as needed */
+  width: 50%; /* Adjust width as needed */
+  margin: 10px auto; /* Adjust margin as needed */
+}
+
+  .shop-now-button {
+    background-color: darkgreen;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .shop-now-button:hover {
+    background-color: #222;
+  }
+  
+  .user-stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5em;
+    gap: 3em;
+    /* flex-direction: column; Adjust to column layout */
+  }
+  
+  .user-stat {
+    font-size: 24px;
+  }
+  
+  .user-text {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  
+  .discount-text {
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 370px; /* Add spacing */
+     /* Red color for discount */
+  }
+  .description-text {
+    font-size: 33px; /* Adjust font size as needed */
+    color: #333; /* Darker color for description */
+  }
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Optional background color */
+  }
+  .banner-text-container {
+    text-align: center;
+  }

@@ -15,6 +15,8 @@
     align-items: center;
     gap: 5em;
     text-align: center;
+    margin-left: 10px;
+   
   }
   
   .recipe-item img {
@@ -29,8 +31,15 @@
   .pricing{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+  }
+  /* .pricing span{
+    white-space: nowrap;
+  } */
+  .pricing span:first-child {
+    margin-right: 5px; /* Adjust the right margin to reduce spacing between elements */
   }
 .shop-by-category {
     text-align: center;
@@ -40,9 +49,24 @@
   }
   
   .category-title {
+    margin-top: 10px;
     margin-bottom: 20px;
   }
-  
+  .horiz-line{
+    border-radius: 10px solid black;
+  }
+  .price-line-container{
+    position: relative;
+    width: 100%;
+  }
+  .price-line{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
   .category-buttons {
     display: flex;
     margin-bottom: 20px;

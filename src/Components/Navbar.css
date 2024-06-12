@@ -1,7 +1,63 @@
 .navbar-links-container {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+  /* transform: translateX(-2em); */
+}
+.dropdownwala{
+  display: flex;
+  align-items: center;
+  /* transform: translateX(-13em); */
+  margin-right: 1rem
+}
+.nondropdown{
+  display: flex;
+  align-items: center;
+  /* transform: translateX(16em); */
+}
+.icon-container {
+  display: flex;
+}
+
+.icon-wrapper {
+  margin-right: 1em; /* Adjust the margin as needed */
+}
+.connectwithus{
+  color: white;
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+  transform: translateX(14em);
+
+}
+.notification {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%);
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  background-color: yellow;
+  color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  top: -15px;
+  right: -19px;
+}
+
+.title {
+  font-size: 24px; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  margin-left: 50px;
+}
+
+.title span {
+  font-weight: normal; /* Reset font weight for 'GO' */
+}
+
   
   .navbar-links-container a {
     margin-right: 1em;
@@ -17,6 +73,9 @@
   .icon-container {
     display: flex;
   }
+  .jugaad{
+    transform: translateX(-10px);
+  }
   
   .icon-wrapper {
     display: flex;
@@ -26,7 +85,7 @@
     height: 2.5rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     transition: border-color 0.3s ease;
   }
   
@@ -69,4 +128,39 @@
       margin-top: 0.5em;
     }
   }
+  /* Navbar Dropdown Styles */
+.dropdown-container {
+  position: relative;
+  
+}
+
+.dropdown-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold; /* Make the text bold */
+}
+
+.dropdown-icon {
+  margin-left: 0.5em;
+}
+
+
+
+.dropdown-item {
+  padding: 0.5em 1em;
+  font-weight: bold; /* Make the text bold */
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .dropdown-container {
+    width: 100%;
+  }
+}
+
   
