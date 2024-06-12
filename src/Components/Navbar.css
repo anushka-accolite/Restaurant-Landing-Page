@@ -1,0 +1,72 @@
+.navbar-links-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links-container a {
+    margin-right: 1em;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .primary-button {
+    margin-left: 1em;
+  }
+  
+  /* Styles for icons */
+  .icon-container {
+    display: flex;
+  }
+  
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .icon-wrapper:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar-menu-container {
+    margin-left: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar-links-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links-container a {
+      margin-right: 0;
+      margin-bottom: 0.5em;
+    }
+  
+    .primary-button {
+      margin-left: 0;
+      margin-top: 0.5em;
+    }
+  
+    .icon-container {
+      flex-direction: row;
+      margin-top: 0.5em;
+    }
+  
+    .icon-wrapper {
+      margin-right: 0.5em;
+    }
+  
+    .navbar-menu-container {
+      margin-left: 0;
+      margin-top: 0.5em;
+    }
+  }
+  

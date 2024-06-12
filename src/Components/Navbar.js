@@ -16,7 +16,9 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-
+import { HiOutlineSearch, HiOutlineHeart, HiOutlineUser, HiOutlineShoppingBag } from "react-icons/hi";
+// import { HiOutlineBars3 } from "react-icons/hi2";
+import "./Navbar.css";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
@@ -46,15 +48,26 @@ const Navbar = () => {
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>
-      <div className="navbar-links-container">
+      <div className="navbar-links-container" style={{marginLeft:"-8em"}}>
         <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
-          <BsCart2 className="navbar-cart-icon" />
-        </a>
-        <button className="primary-button">Bookings Now</button>
+        <a href="">Groceries</a>
+        <a href="">Pages</a>
+        <a href="">Connect with us-></a>
+        <div className="icon-container">
+          <div className="icon-wrapper">
+            <HiOutlineHeart className="navbar-icon heart" />
+          </div>
+          <div className="icon-wrapper">
+            <HiOutlineSearch className="navbar-icon search" />
+          </div>
+          <div className="icon-wrapper">
+            <HiOutlineUser className="navbar-icon user" />
+          </div>
+          <div className="icon-wrapper">
+            <HiOutlineShoppingBag className="navbar-icon bag" />
+          </div>
+        </div>
+       
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
